@@ -1,0 +1,176 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and fonts */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f0f2f5;
+  color: #333;
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* Navigation */
+header nav {
+  background: #005aab;
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header nav h1 {
+  font-size: 1.8rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+header nav ul li a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+}
+
+header nav ul li a:hover {
+  background: #003f75;
+  border-radius: 5px;
+}
+
+/* Sections */
+section {
+  background: white;
+  padding: 1.5rem 2rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* About Me */
+#about img {
+  float: right;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 1rem;
+}
+
+/* Portfolio */
+.project {
+  margin-bottom: 2rem;
+}
+
+.project img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin: 0.5rem 0;
+}
+
+/* Skills */
+.skills-list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.skills-list li {
+  background: #dceeff;
+  flex: 1 1 140px;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.progress-bar {
+  background: #b3d1ff;
+  border-radius: 10px;
+  height: 12px;
+  margin-top: 0.5rem;
+  overflow: hidden;
+}
+
+.progress {
+  background: #005aab;
+  height: 12px;
+  border-radius: 10px 0 0 10px;
+}
+
+/* Testimonials */
+blockquote {
+  font-style: italic;
+  border-left: 4px solid #005aab;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+}
+
+button {
+  background: #005aab;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #003f75;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  #about img {
+    float: none;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

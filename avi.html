@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio website showcasing projects, skills, and contact information." />
+  <title>Your Name - Portfolio</title>
+  <link rel="stylesheet" href="avi.css" />
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>Your Name</h1>
+    <ul>
+      <li><a href="#home" aria-label="Home">Home</a></li>
+      <li><a href="#about" aria-label="About Me">About Me</a></li>
+      <li><a href="#portfolio" aria-label="Portfolio">Portfolio</a></li>
+      <li><a href="#skills" aria-label="Skills">Skills</a></li>
+      <li><a href="#testimonials" aria-label="Testimonials">Testimonials</a></li>
+      <li><a href="#contact" aria-label="Contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="home">
+    <h2>Welcome</h2>
+    <p>Hi! I'm a [your profession], specializing in [skills]. Explore my portfolio to see what I've done.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="profile.jpg" alt="Professional photo of Your Name" />
+    <p>I have experience in [brief bio]. I enjoy solving problems using [tools/technologies].</p>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <article class="project">
+      <h3>Project Title 1</h3>
+      <img src="project1.jpg" alt="Screenshot of Project 1" />
+      <p><strong>Role:</strong> Developer | <strong>Tools:</strong> HTML, CSS, JS</p>
+      <p>Created a responsive website that [describe project]. Faced challenges like [challenge], solved by [solution].</p>
+    </article>
+
+    <article class="project">
+      <h3>Project Title 2</h3>
+      <img src="project2.jpg" alt="Screenshot of Project 2" />
+      <p><strong>Role:</strong> Designer | <strong>Tools:</strong> Figma, Adobe XD</p>
+      <p>Designed a clean, accessible UI for [project].</p>
+    </article>
+
+    <!-- Add up to 10 projects similarly -->
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>
+        HTML
+        <div class="progress-bar"><div class="progress" style="width:90%"></div></div>
+      </li>
+      <li>
+        CSS
+        <div class="progress-bar"><div class="progress" style="width:85%"></div></div>
+      </li>
+      <li>
+        JavaScript
+        <div class="progress-bar"><div class="progress" style="width:80%"></div></div>
+      </li>
+      <!-- Add more skills -->
+    </ul>
+  </section>
+
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <blockquote>"Outstanding work and professionalism." – Client A</blockquote>
+    <blockquote>"Delivered exactly what we needed, on time." – Client B</blockquote>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm" aria-label="Contact form">
+      <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true" />
+      <input type="email" id="email" name="email" placeholder="Your Email" required aria-required="true" />
+      <textarea id="message" name="message" rows="5" placeholder="Your Message" required aria-required="true"></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p>Connect with me: 
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a> | 
+      <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Your Name</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
